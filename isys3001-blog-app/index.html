@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的技术博客 - ISYS3001</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">我的技术博客</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">首页</a>
+                <a href="#admin" class="nav-link">管理</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="home" class="section active">
+            <h1>最新文章</h1>
+            <div id="posts-container" class="posts-grid">
+                <div class="loading">加载中...</div>
+            </div>
+        </section>
+
+        <section id="admin" class="section">
+            <h1>发布新文章</h1>
+            <div class="form-container">
+                <form id="post-form" class="blog-form">
+                    <div class="form-group">
+                        <label for="post-title">文章标题</label>
+                        <input type="text" id="post-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="post-content">文章内容</label>
+                        <textarea id="post-content" rows="8" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">发布文章</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>ISYS3001 Assignment 2</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
