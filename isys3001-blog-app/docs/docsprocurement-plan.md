@@ -1,65 +1,45 @@
-# 软件采购计划书 (RFP)
+# Software Procurement Plan (RFP)
 
-## 1. 项目需求
-开发一个功能完整的博客系统，需要以下工具和服务。
+## 1. Project Requirements
+Blog application development tools and services.
 
-## 2. 采购清单
+## 2. Procurement List
 
-| 工具/服务 | 类型 | 供应商 | 选择理由 | 成本 |
-|-----------|------|--------|----------|------|
-| GitHub | 版本控制平台 | GitHub, Inc. | 行业标准，优秀的协作功能，免费公开仓库 | $0 |
-| GitHub Pages | 静态网站托管 | GitHub, Inc. | 与GitHub无缝集成，自动化部署，免费SSL | $0 |
-| HTML/CSS/JS | 前端技术 | Web标准 | 所有浏览器原生支持，无需安装 | $0 |
-| LocalStorage | 数据存储 | 浏览器厂商 | 客户端存储，无需后端服务器 | $0 |
+| Tool/Service | Type | Cost |
+|--------------|------|------|
+| GitHub | Version Control | $0 |
+| GitHub Pages | Hosting | $0 |
+| HTML/CSS/JS | Development | $0 |
+| LocalStorage | Data Storage | $0 |
 
-## 3. 供应商评估
+## 3. Vendor Evaluation
 
-### 3.1 GitHub & GitHub Pages
-- **可靠性**: Microsoft旗下产品，99.9%正常运行时间
-- **功能**: 完整的CI/CD流水线，自动化部署
-- **安全性**: 免费SSL证书，DDoS防护
-- **成本**: 完全免费满足项目需求
+### 3.1 GitHub
+- Industry standard platform
+- Free public repositories
+- Excellent collaboration tools
 
-### 3.2 技术栈选择
-- **兼容性**: 所有现代浏览器完全支持
-- **性能**: 静态网站，加载速度快
-- **维护**: 无需服务器维护
+### 3.2 Web Technologies
+- Universal browser support
+- No installation required
+- Rich ecosystem
 
-## 4. 采购流程
+## 4. Procurement Process
+1. Create GitHub account
+2. Set up repository
+3. Configure GitHub Pages
+4. Begin development
 
-### 4.1 注册与设置
-1. 注册GitHub免费账户
-2. 创建代码仓库
-3. 配置GitHub Pages自动部署
+## 5. Budget
+**Total Cost: $0**
 
-### 4.2 开发流程
-1. 在develop分支进行功能开发
-2. 通过Pull Request合并到main分支
-3. 自动部署到GitHub Pages
+All tools offer free tiers suitable for project requirements.
 
-## 5. 预算与成本分析
-
-### 5.1 总预算: $0
-所有工具和服务均提供免费套餐。
-
-### 5.2 成本明细
-- 代码托管: $0 (GitHub)
-- 网站托管: $0 (GitHub Pages)  
-- 开发工具: $0 (浏览器 + 文本编辑器)
-- 域名SSL: $0 (GitHub Pages提供)
-
-## 6. 风险评估
-
-### 6.1 潜在风险
-- GitHub服务中断影响网站访问
-- LocalStorage数据丢失风险
-- 浏览器兼容性问题
-
-### 6.2 缓解措施
-- 定期本地备份代码
-- 实现数据导出功能
-- 多浏览器测试兼容性
+## 6. Risk Management
+- Regular code backups
+- Multi-browser testing
+- Data export functionality
 
 ---
+**Declaration**: Based on actual product information and pricing.
 
-**声明**: 本采购计划基于真实产品信息和定价。
