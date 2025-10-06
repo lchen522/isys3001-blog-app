@@ -1,50 +1,134 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的技术博客 - ISYS3001</title>
+    <title>Tech Blog - ISYS3001 Assignment</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="nav-brand">我的技术博客</div>
+            <div class="nav-brand">DevBlog</div>
             <div class="nav-links">
-                <a href="#home" class="nav-link active">首页</a>
-                <a href="#admin" class="nav-link">管理</a>
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#admin" class="nav-link">Admin</a>
+                <a href="#about" class="nav-link">About</a>
             </div>
         </nav>
     </header>
 
     <main class="container">
+        <!-- Home Section -->
         <section id="home" class="section active">
-            <h1>最新文章</h1>
+            <div class="hero">
+                <h1>Welcome to DevBlog</h1>
+                <p>A simple blog application demonstrating configuration and procurement management practices</p>
+            </div>
+            
+            <div class="posts-header">
+                <h2>Latest Articles</h2>
+                <div class="post-count">Total Posts: <span id="post-count">0</span></div>
+            </div>
+            
             <div id="posts-container" class="posts-grid">
-                <div class="loading">加载中...</div>
+                <div class="welcome-post post-card">
+                    <h3>🚀 Getting Started</h3>
+                    <p>Welcome to your new blog! This is a demonstration of software configuration management and procurement practices for ISYS3001 Assignment 2.</p>
+                    <p><strong>Features:</strong> Create posts, Local storage, Responsive design</p>
+                    <div class="post-date">Posted: Just now</div>
+                </div>
             </div>
         </section>
 
+        <!-- Admin Section -->
         <section id="admin" class="section">
-            <h1>发布新文章</h1>
+            <div class="admin-header">
+                <h1>Blog Management</h1>
+                <p>Create and manage your blog posts</p>
+            </div>
+            
             <div class="form-container">
                 <form id="post-form" class="blog-form">
                     <div class="form-group">
-                        <label for="post-title">文章标题</label>
-                        <input type="text" id="post-title" required>
+                        <label for="post-title">Post Title *</label>
+                        <input type="text" id="post-title" required placeholder="Enter a compelling title">
                     </div>
+                    
                     <div class="form-group">
-                        <label for="post-content">文章内容</label>
-                        <textarea id="post-content" rows="8" required></textarea>
+                        <label for="post-content">Post Content *</label>
+                        <textarea id="post-content" rows="8" required placeholder="Write your blog post content here..."></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">发布文章</button>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn primary">
+                            📝 Publish Post
+                        </button>
+                        <button type="button" class="secondary-btn" onclick="blogApp.clearForm()">
+                            🗑️ Clear Form
+                        </button>
+                    </div>
                 </form>
+            </div>
+            
+            <div class="existing-posts">
+                <h2>Existing Posts</h2>
+                <div class="posts-stats">
+                    <span>Total: <strong id="admin-post-count">0</strong> posts</span>
+                    <button class="secondary-btn small" onclick="blogApp.exportPosts()">📤 Export Data</button>
+                </div>
+                <div id="admin-posts-container">
+                    <!-- Posts will be loaded here dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="about-content">
+                <h1>About This Project</h1>
+                
+                <div class="project-info">
+                    <div class="info-card">
+                        <h3>📋 Assignment Details</h3>
+                        <ul>
+                            <li><strong>Unit:</strong> ISYS3001 - Managing Software Development</li>
+                            <li><strong>Assessment:</strong> #2 - Practical Project</li>
+                            <li><strong>Weight:</strong> 40%</li>
+                            <li><strong>Due Date:</strong> 29 September 2025</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>🎯 Learning Outcomes</h3>
+                        <ul>
+                            <li>Apply configuration management techniques</li>
+                            <li>Implement version control best practices</li>
+                            <li>Create software procurement specifications</li>
+                            <li>Manage software development projects</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>🛠️ Technologies Used</h3>
+                        <ul>
+                            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                            <li>Git & GitHub for version control</li>
+                            <li>GitHub Pages for deployment</li>
+                            <li>LocalStorage for data persistence</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>ISYS3001 Assignment 2</p>
+        <div class="footer-content">
+            <p>ISYS3001 Assignment 2 - Software Configuration & Procurement Management</p>
+            <p>GitHub Repository: <a href="#" id="repo-link">https://github.com/your-username/isys3001-blog-app</a></p>
+            <p class="footer-note">This project demonstrates software development best practices including version control, branching strategies, and procurement management.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
