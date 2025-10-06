@@ -1,48 +1,37 @@
-# 配置管理报告
+# Configuration Management Report
 
-## 1. 项目概述
-本项目是一个基于HTML、CSS和JavaScript的简单博客系统，用于展示配置管理最佳实践。
+## 1. Project Overview
+Simple blog application demonstrating configuration management best practices.
 
-## 2. 版本控制实践
+## 2. Version Control Practices
 
-### 2.1 分支策略
-- **main分支**: 稳定版本，用于部署和生产环境
-- **develop分支**: 开发版本，所有新功能在此开发
+### 2.1 Branch Strategy
+- **main branch**: Production-ready code
+- **develop branch**: Development and testing
 
-### 2.2 提交规范
-使用语义化提交信息：
-- `feat: ` - 新功能
-- `docs: ` - 文档更新
-- `chore: ` - 维护任务
+### 2.2 Commit Standards
+- Semantic commit messages
+- Clear change descriptions
 
-### 2.3 仓库信息
-- **仓库地址**: https://github.com/你的用户名/isys3001-blog-app
-- **在线演示**: https://你的用户名.github.io/isys3001-blog-app
+### 2.3 Repository
+- **URL**: https://github.com/[username]/isys3001-blog-app
+- **Live Demo**: https://[username].github.io/isys3001-blog-app
 
-## 3. 配置管理实践
+## 3. Configuration Management
 
-### 3.1 文件组织结构
+### 3.1 File Structure
 
-### 3.2 部署配置
-使用GitHub Pages进行自动化部署：
-- 自动从main分支部署
-- 支持自定义域名
-- 免费SSL证书
+### 3.2 Deployment
+- GitHub Pages for hosting
+- Automatic deployment from main branch
 
-## 4. 截图证据
+## 4. Evidence
+- Branch structure screenshot
+- Commit history screenshot
+- Live application screenshot
 
-### 4.1 分支结构截图
-![分支结构](分支截图URL)
-
-### 4.2 提交历史截图  
-![提交历史](提交历史URL)
-
-### 4.3 博客运行截图
-![博客运行](博客截图URL)
-
-## 5. 总结
-通过本项目，我掌握了Git分支管理、版本控制工作流程和自动化部署的最佳实践。
+## 5. Conclusion
+Successfully implemented configuration management practices.
 
 ---
-
-**GitHub用户名**: [lchen522]
+**GitHub Username**: [your-username]
